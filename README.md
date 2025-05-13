@@ -42,6 +42,7 @@ For better LLM results, use Open AI API. Reference Alejandro-AO's repo that was 
 ### 6. 🧠 Pull the required Ollama Models:
 
   Still inside your IDE terminal (with the virtual environment activated), run:
+
   ```ollama pull mistral && ollama pull nomic-embed-text```
 
   Let the installation complete before moving to next step. 
@@ -58,7 +59,9 @@ For better LLM results, use Open AI API. Reference Alejandro-AO's repo that was 
 ### 8. ▶️ Run the Streamlit App:
 
   Once everything is installed and all models are downloaded, launch the RAG app with this command in your virtual env:
+
   ```streamlit run main.py```
+
   This will open a browser tab with your local AI-powered retrieval chatbot.
 
 ### 🛠 Troubleshooting:
