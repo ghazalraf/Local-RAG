@@ -5,21 +5,20 @@ from langchain_community.llms import Ollama
 import numpy as np
 import chromadb
 
+
 from langchain_community.vectorstores import Chroma
 from langchain_chroma import Chroma
-from langchain.text_splitter import CharacterTextSplitter
+from langchain_text_splitters import CharacterTextSplitter
 from langchain_community import embeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.llms import ctransformers
 from langchain.chains import ConversationalRetrievalChain
-from langchain.schema import Document 
+from langchain_core.documents import Document
 
 from PyPDF2 import PdfReader
 from langchain_nomic import NomicEmbeddings
 from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
-from langchain.chat_models import ChatOpenAI
 
 def get_pdf_text(pdf_docs):
     text = ""
@@ -67,7 +66,7 @@ def handle_userinput(user_question):
             st.write(bot_template.replace("{{MSG}}", message.content), unsafe_allow_html=True)
 
 def main():
-    st.set_page_config(page_title="Ask Questions to PDF Docs", page_icon=":books:") #Update the title and icon as you see fit.
+    st.set_page_config(page_title="Ask Questions to PDF Docs", page_icon=":page_facing_up:") #Update the title and icon as you see fit.
 
     st.write(css, unsafe_allow_html=True)
 
@@ -76,7 +75,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history=None
 
-    st.header("The RAG Fit: :page_facing_up:")
+    st.header("PDF RAG: :page_facing_up:")
     user_question = st.text_input("Ask a question about your documents:")
     if user_question:
         handle_userinput(user_question)
@@ -98,7 +97,6 @@ def main():
 
                 # create conversation chain
                 st.session_state.conversation = get_conversation_chain(vectorstore)
-    
 
 if __name__ == '__main__':
     main()
