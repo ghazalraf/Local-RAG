@@ -1,8 +1,10 @@
 # Local-RAG
 
-This project lets you run a local Retrieval-Augmented Generation (RAG) application using Langchain and Ollama. Alternatively, if you have Docker installed, you can create a simple local RAG/GenAI chat by following these instructions: https://github.com/open-webui/open-webui (You can still use Ollama for running local, open-source LLMS).
+This project lets you run a local Retrieval-Augmented Generation (RAG) application using Langchain and Ollama. 
 
-For better LLM results, you may also use Open AI API. Reference Alejandro-AO's repo that was the inspiration for this project: https://github.com/alejandro-ao/ask-multiple-pdfs 
+Alternatively, if you have Docker installed, you can create a simple local RAG/GenAI chat by following these instructions: https://github.com/open-webui/open-webui (You can still use Ollama for running local, open-source LLMS).
+
+For better LLM results, use Open AI API. Reference Alejandro-AO's repo that was the inspiration for this project: https://github.com/alejandro-ao/ask-multiple-pdfs 
 
 ## Setup Instructions
 ### 1. ✅ Install Ollama 
