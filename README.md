@@ -45,7 +45,7 @@ For better LLM results, use Open AI API. Reference Alejandro-AO's repo that was 
   ```ollama pull mistral && ollama pull nomic-embed-text```
 
   Let the installation complete before moving to next step. 
-  Instead of Mistral, if you want to download/test other models, find their respective pull command from [the ollama.](https://www.ollama.com/search).
+  Instead of Mistral, if you want to download/test other models, find their respective pull command from [the Ollama website.](https://www.ollama.com/search)
 
 ### 7. 📑 Add the main code files:
 
@@ -68,5 +68,5 @@ For better LLM results, use Open AI API. Reference Alejandro-AO's repo that was 
 * Python issues? Check you're using Python 3.10+ and your virtual environment is active.
 
 ### 🔭 Learn more about Langchain RAG modules: 
-https://python.langchain.com/docs/tutorials/rag/#components 
+[Langchain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/#components)
 
