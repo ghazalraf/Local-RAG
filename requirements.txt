@@ -1,0 +1,13 @@
+streamlit>=1.30.0
+ollama>=0.1.20
+langchain-core>=0.1.17
+langchain-community>=0.0.15
+langchain-chroma>=0.0.5
+chromadb>=0.4.22
+numpy>=1.26.0
+faiss-cpu>=1.7.4
+ctransformers>=0.2.27
+PyPDF2>=3.0.0
+langchain-nomic>=0.0.1
+nomic>=3.0.17
+langchain-text-splitters>=0
