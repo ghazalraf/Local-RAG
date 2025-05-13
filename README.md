@@ -53,11 +53,11 @@ For better LLM results, use Open AI API. Reference Alejandro-AO's repo that was 
   * `main.py`
   * `htmlTemplates.py`
 
-  Then paste the contents from your respective source files into each of them.
+  Then paste the contents from the respective source files into each of them.
 
 ### 8. ▶️ Run the Streamlit App:
 
-  Once everything is installed and all models are downloaded, launch the RAG app with:
+  Once everything is installed and all models are downloaded, launch the RAG app with this command in your virtual env:
   ```streamlit run main.py```
   This will open a browser tab with your local AI-powered retrieval chatbot.
 
